@@ -19,39 +19,37 @@
 <body>
     <div id="anti-scroller" class="scroller"></div>
     <header id="header" class="header lock-padding">
-        <div class="container">
-            <div class="header__inner">
-                <a class="logo" href="#">
-                    <img class="logo__img" src="images/logo-vector.png" alt="logo">
-                </a>
-                <nav id="menu" class="menu">
-                    <div class="menu__btn">
-                        <span></span>
-                    </div>
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#kassi">Кассы</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#ip">Открытие ИП</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#rs">Расчетный счет</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#ecp">Создание ЭЦП</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#footer">О нас</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="header__inner">
+            <a class="logo" href="#">
+                <img class="logo__img" src="images/logo-vector.png" alt="logo">
+            </a>
+            <nav id="menu" class="menu">
+                <div class="menu__btn">
+                    <span></span>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#kassi">Кассы</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#ip">Открытие ИП</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#rs">Расчетный счет</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#ecp">Создание ЭЦП</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#footer">О нас</a>
+                    </li>
+                </ul>
+            </nav>
 
-                <nav class="user__nav">
-                    <a class="user__nav-link" href="tel:+7-987-308-23-15">+7-987-308-23-15</a>
-                    <a class="user__nav-link" href="#popup1">Консультация</a>
-                </nav>
-            </div>
+            <nav class="user__nav">
+                <a class="user__nav-link" href="tel:+7-987-308-23-15">+7-987-308-23-15</a>
+                <a class="user__nav-link" href="#popup1">Консультация</a>
+            </nav>
         </div>
     </header>
     <section class="top">
@@ -157,6 +155,49 @@
         </div>
         <section class="cards">
             <div class="container">
+                <div class="card__inner">
+                    <div class="card__wrapper">
+                        <h2 class="card__title">Касса</h2>
+                        <p class="card__price">14 900 руб.</p>
+                        <hr>
+                        <ul class="card__preferences">
+                            <li class="card__item">ПТК MSPOS-K</li>
+                            <li class="card__item">Установка и настройка товароучетной программы</li>
+                            <li class="card__item">Бесплатная доставка</li>
+                            <li class="card__item-lock">Фискальный накопитель на 15/36 месяцев</li>
+                            <li class="card__item-lock">Подключение к ОФД на 15/36 месяцев</li>
+                        </ul>
+                        <a href="popup1" class="card__link btn1">Заказать</a>
+                    </div>
+                    <div class="card__wrapper">
+                        <h2 class="card__title">Касса 15</h2>
+                        <p class="card__price">26 900 руб.</p>
+                        <hr>
+                        <ul class="card__preferences">
+                            <li class="card__item">ПТК MSPOS-K</li>
+                            <li class="card__item">Установка и настройка товароучетной программы</li>
+                            <li class="card__item">Бесплатная доставка</li>
+                            <li class="card__item">Фискальный накопитель на 15 месяцев</li>
+                            <li class="card__item">Подключение к ОФД на 15 месяцев</li>
+                        </ul>
+                        <a href="popup1" class="card__link btn1">Заказать</a>
+                    </div>
+                    <div class="card__wrapper">
+                        <h2 class="card__title">Касса 36</h2>
+                        <p class="card__price">32 900 руб.</p>
+                        <hr>
+                        <div class="card__preferences">
+                            <li class="card__item">ПТК MSPOS-K</li>
+                            <li class="card__item">Установка и настройка товароучетной программы</li>
+                            <li class="card__item">Бесплатная доставка</li>
+                            <li class="card__item">Фискальный накопитель на 36 месяцев</li>
+                            <li class="card__item">Подключение к ОФД на 36 месяцев</li>
+                        </div>
+                        <a href="popup1" class="card__link btn1">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container">
                 <div class="card-wrapper">
                     <div class="card">
                         <div class="card__front">
@@ -240,7 +281,7 @@
                             <a href="#popup1" class="card__back-link">Консультация</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
         </section>
         <section id="kassi" class="direction">
             <div class="container">
@@ -283,7 +324,8 @@
                                         точек,
                                         сферы услуг, любых видов выездной торговли, а также продаж в интернете и
                                         курьерских
-                                        служб <br> Для подключения к интернет имеются все беспроводные интерфейсы: wi-fi,
+                                        служб <br> Для подключения к интернет имеются все беспроводные интерфейсы:
+                                        wi-fi,
                                         Bluetooth, 3G-модем. Встроенную камеру 5 Мп. можно использовать в качестве
                                         сканера одномерных кодов. Для работы с 2D-кодами можно подключить любой
                                         проводной сканер через переходник OTG USB Type-С или беспроводной сканер по
