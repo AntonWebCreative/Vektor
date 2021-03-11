@@ -445,13 +445,13 @@ input[type=submit]{
     position: relative;
     background: rgb(215,71,35);
     background: linear-gradient(176deg, rgba(215,71,35,1) 0%, rgba(253,198,29,1) 50%, rgba(252,176,69,1) 100%);
+}
 .card__title{
     font-size: 18px;
     line-height: 30px;
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 15px;
-
 }
 .card__price{
     font-size: 28px;
