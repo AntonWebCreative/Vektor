@@ -7,9 +7,7 @@ body{
     color: #272220;
     font-size: 16px;
     line-height: 26px;
-    background: linear-gradient(-45deg, #aed3f7, #ffffff, #d0c8fc, #93b2c4);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background-color: #fff;
 }
 
 @keyframes gradient {
@@ -159,13 +157,16 @@ input[type=submit]{
     color: #000;
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 78px;
     position: fixed;
-    background-color: rgba(133, 225, 248, 0.1);
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 8px 0px rgb(34 60 80 / 20%);
+    -moz-box-shadow: 0px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 10px 8px 0px rgb(34 60 80 / 20%);
     z-index: 25;
     width: 100%;
 }
@@ -314,7 +315,7 @@ input[type=submit]{
     text-decoration: none;
     width: 200px;
     text-align: center;
-    border: 2px solid #27AAE2;
+    border: 2px solid #27376b;
     overflow: hidden;
     transition: 1s all ease;
     bottom: 20px;
@@ -339,7 +340,11 @@ input[type=submit]{
     z-index: -1;
     transition: all 0.6s ease;
 }
-
+.btn1::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
 .btn1::before{
     width: 100%;
     height: 0%;
@@ -400,7 +405,7 @@ input[type=submit]{
 .preferenses__link{
     position: relative;
     display: block;
-    color: #fff;
+    color: #0a2e65fc;
     border-radius: 4px;
     padding: 15px 14px;
     font-weight: 700;
@@ -453,61 +458,37 @@ input[type=submit]{
     margin-top: 35px;
 }
 .card__wrapper{
-    width: 300px;
+    width: 30%;
     height: 550px;
     border: 1px solid #27AAE2;
     border-radius: 4px;
     padding: 10px;
-    margin: 0 10px;
+    margin: 10px 10px;
     position: relative;
     background: rgb(215,71,35);
-    background: linear-gradient(176deg, rgba(215,71,35,1) 0%, rgba(253,198,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(176deg, rgb(7, 189, 235) 0%, rgb(197, 244, 250) 50%, rgb(47, 156, 245) 100%);
 }
-.card__wrapper-odd{
-    width: 300px;
-    height: 550px;
-    border: 1px solid #27AAE2;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 0 10px;
-    position: relative;
-    background: rgb(35,208,215);
-    background: linear-gradient(176deg, rgba(35,208,215,1) 0%, rgba(255,255,255,1) 50%, rgba(69,131,252,1) 100%);
-}
+
 .card__wrapper:hover{
     box-shadow: 0px 0px 19px 2px #2C9DFF;
 }
-.card__wrapper-odd:hover{
-    box-shadow: 0px 0px 19px 2px #f3c156;
-}
+
 .card__title{
     font-size: 18px;
     line-height: 30px;
-    color: #ffffff;
+    color: #010638;
     font-weight: 700;
     margin-bottom: 15px;
 }
-.card__title-odd{
-    font-size: 18px;
-    line-height: 30px;
-    color: #201919;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
+
 .card__price{
     font-size: 28px;
     line-height: 40px;
-    color: #ffffff;
+    color: #010638;
     font-weight: 700;
     margin-bottom: 25px;
 }
-.card__price-odd{
-    font-size: 28px;
-    line-height: 40px;
-    color: #201919;
-    font-weight: 700;
-    margin-bottom: 25px;
-}
+
 hr{
     border: none; /* Убираем границу */
     background-color: #27AAE2; /* Цвет линии */
@@ -517,18 +498,12 @@ hr{
 }
 .card__item, .card__item-lock{
     position: relative;
-    color: #fff;
+    color: #000;
     padding-left: 20px;
     font-size: 16px;
     line-height: 20px;
 }
-.odd{
-    position: relative;
-    color: #201919;
-    padding-left: 20px;
-    font-size: 16px;
-    line-height: 20px;
-}
+
 .card__item::before{
     content: '';
     background-image: url(../images/check.png);
@@ -664,7 +639,7 @@ hr{
     justify-content: space-between;
 }
 .direction__item-image{
-    max-width: 45%;
+    max-width: 35%;
 }
 .direction__item-image img{
     max-width: 100%;
